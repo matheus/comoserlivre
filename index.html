@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Ser Livre</title>
+    <style>
+        /* Estilo básico da página */
+        body {
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            font-weight: lighter;
+            color: #e8e8e8;
+        }
+
+        /* Área de Introdução */
+        .intro {
+            padding: 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* Estilo da lista de vídeos */
+        .video-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .video-item {
+            background-color: #2a2a2a;
+            padding: 10px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .video-item:hover {
+            transform: scale(1.05);
+        }
+
+        .video-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #f4511e;
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #c63d14;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título e introdução -->
+    <div class="intro">
+        <h1>Como Ser Livre</h1>
+        <h2>"A liberdade é uma jornada, não um destino"</h2>
+        <p>Bem-vindo ao canal 'Como Ser Livre'! Exploramos temas como liberdade financeira, sobrevivencialismo, desenvolvimento pessoal e independência do sistema. Aqui, você descobrirá como conquistar essas liberdades e transformar sua vida.</p>
+        <a class="cta-button" href="https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA" target="_blank">Visite nosso canal no YouTube</a>
+    </div>
+
+    <!-- Lista de vídeos -->
+    <div class="video-list" id="videoList">
+        <!-- Os vídeos serão inseridos pelo JavaScript -->
+    </div>
+
+    <script>
+        const apiKey = 'AIzaSyCFhPbnefJcobwrGFRhKOU3eE0MXE0GtJs';
+const channelId = 'UCStXYJ2vPCXBMys5v-MaTfA';
+const maxResults = 5;
+
+async function loadVideos() {
+    const response = await fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${maxResults}`);
+    const data = await response.json();
+    
+    const videoList = document.getElementById('videoList');
+    data.items.forEach(video => {
+        const videoItem = document.createElement('div');
+        videoItem.classList.add('video-item');
+        videoItem.innerHTML = `
+            <img src="${video.snippet.thumbnails.high.url}" alt="Thumbnail de ${video.snippet.title}">
+            <p>${video.snippet.title}</p>
+        `;
+        videoList.appendChild(videoItem);
+    });
+}
+
+loadVideos();
+    </script>
+
+</body>
+</html>
