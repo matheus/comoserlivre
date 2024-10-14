@@ -6,70 +6,54 @@
     <title>Como Ser Livre</title>
     <style>
         body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #000;
+            background-color: #f9f9f9;
+            color: #333;
             font-family: Arial, sans-serif;
-            color: #FFF;
-        }
-        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
             text-align: center;
-            max-width: 400px;
-        }
-        .profile-img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            background-image: url('https://yt3.googleusercontent.com/AWwXnms-uQ22kw2ntfB9I3FR4WYpqnahq-Uf3_9fwi02qX3RGqQ80IrAhhOg4Ap7eUFrMorI8A=s160-c-k-c0x00ffffff-no-rj');
-            background-size: cover;
-            background-position: center;
-            margin-bottom: 20px;
-            border: 2px solid #FF4500;
         }
         h1 {
-            font-size: 2rem;
-            color: #FFF;
-            margin: 10px 0;
-        }
-        .impact-phrase {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #FF4500;
-            margin: 15px 0;
+            margin: 20px 0;
+            font-size: 2.5em;
         }
         p {
-            font-size: 1rem;
-            color: #FFF;
-            margin: 10px 0;
-            opacity: 0.8;
+            margin: 10px 0 30px;
+            font-size: 1.2em;
         }
-        .subscribe-button {
-            font-size: 1rem;
-            padding: 10px 20px;
-            color: #000;
-            background-color: #FF4500;
+        img {
+            border-radius: 50%;
+            width: 150px; /* Tamanho da foto de perfil */
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .btn-inscrever {
+            background-color: #ff5733; /* Cor do botão */
+            color: white;
+            padding: 15px 30px;
             border: none;
             border-radius: 5px;
+            font-size: 1.2em;
             cursor: pointer;
-            transition: background-color 0.3s;
-            text-decoration: none;
+            transition: background-color 0.3s ease;
         }
-        .subscribe-button:hover {
-            background-color: #ff5733;
+        .btn-inscrever:hover {
+            background-color: #c0392b; /* Cor do botão ao passar o mouse */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="profile-img"></div>
-        <h1>Como Ser Livre</h1>
-        <p class="impact-phrase">A Liberdade é uma jornada, não um destino.</p>
-        <p>Explorando a liberdade financeira, geográfica e de tempo para uma vida autônoma.</p>
-        <a href="https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA" target="_blank" class="subscribe-button">Inscreva-se no Canal</a>
-    </div>
+    <img src="https://yt3.googleusercontent.com/AWwXnms-uQ22kw2ntfB9I3FR4WYpqnahq-Uf3_9fwi02qX3RGqQ80IrAhhOg4Ap7eUFrMorI8A=s160-c-k-c0x00ffffff-no-rj" alt="Foto de Perfil do Canal">
+    <h1>Como Ser Livre</h1>
+    <p>Frase de Impacto: "A Liberdade é uma jornada, não um destino."</p>
+    <p>Descrição: Descubra como alcançar liberdade financeira e de tempo, enquanto desenvolve um estilo de vida minimalista.</p>
+    <button class="btn-inscrever" onclick="window.location.href='https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA?sub_confirmation=1'">
+        Inscreva-se no Canal
+    </button>
 </body>
 </html>
