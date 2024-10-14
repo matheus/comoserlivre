@@ -6,61 +6,70 @@
     <title>Como Ser Livre</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif; /* Fonte mais fina e minimalista */
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: white; /* Fundo claro */
-            color: #333; /* Texto escuro */
+            background-color: #ffffff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
         }
-        .container {
-            max-width: 800px; /* Largura máxima */
-            margin: 40px auto; /* Margens maiores nas laterais */
-            padding: 40px; /* Mais espaço interno */
-            text-align: center; /* Centraliza o conteúdo */
-            background-color: white; /* Fundo branco para o container */
-            border-radius: 10px; /* Bordas arredondadas */
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
-        }
-        h3 {
-            font-size: 28px; /* Tamanho da fonte */
-            margin: 30px 0; /* Margem superior e inferior */
-        }
-        em {
-            font-weight: bold; /* Destaque em negrito */
-            color: #ff3e00; /* Cor para o destaque */
-        }
-        p {
-            font-size: 20px; /* Tamanho da fonte para a descrição */
-            line-height: 1.8; /* Espaçamento entre linhas */
-            margin: 15px 0; /* Margem para o parágrafo */
-        }
-        .subscribe-button {
-            display: inline-block; /* Botão em bloco */
-            padding: 15px 30px; /* Espaçamento interno do botão */
-            font-size: 20px; /* Tamanho da fonte do botão */
-            color: white; /* Texto do botão em branco */
-            background-color: #ff3e00; /* Cor de fundo do botão */
-            border: none; /* Sem borda */
-            border-radius: 5px; /* Bordas arredondadas */
-            cursor: pointer; /* Mão no hover */
-            transition: background-color 0.3s; /* Efeito de transição */
-            text-decoration: none; /* Remove sublinhado do link */
-        }
-        .subscribe-button:hover {
-            background-color: #e63946; /* Cor ao passar o mouse */
-        }
+
         img {
-            border-radius: 50%; /* Torna a imagem redonda */
-            margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+            width: 150px; /* Tamanho da foto de perfil */
+            height: 150px; /* Tamanho da foto de perfil */
+            border-radius: 50%; /* Círculo */
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em; /* Tamanho do nome do canal */
+            margin: 10px 0;
+        }
+
+        h3 {
+            font-size: 1.5em; /* Tamanho da frase de impacto */
+            margin: 10px 0;
+        }
+
+        em {
+            font-style: normal;
+            font-weight: bold; /* Destaque para a frase de impacto */
+        }
+
+        p {
+            margin: 10px 0 20px; /* Margem para a descrição do canal */
+            max-width: 600px; /* Limita a largura da descrição */
+        }
+
+        .subscribe-button {
+            background-color: #ff5722; /* Cor laranja */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.2em; /* Tamanho do texto no botão */
+            border-radius: 5px; /* Cantos arredondados */
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .subscribe-button:hover {
+            background-color: #e64a19; /* Cor laranja escuro ao passar o mouse */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://yt3.googleusercontent.com/-juy_48UO-FV4WMG-cpa-kgWGigHpaMPTr52h38LOdvKFqzlP2t20QVyy9aYTrepBcVnYZicF-w=s160-c-k-c0x00ffffff-no-rj" alt="Foto de Perfil" width="150" height="150">
-        <h3><em>A Liberdade é uma jornada, não um destino</em></h3>
-        <p>Bem-vindo ao canal "Como Ser Livre", onde exploramos caminhos para a liberdade financeira, de tempo e geográfica.</p>
-        <a class="subscribe-button" href="https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA?sub_confirmation=1" target="_blank">Inscreva-se no Canal</a>
-    </div>
+    <img src="https://yt3.googleusercontent.com/UOVIftITbPrgPG4k3r4s6KGgenkWJB6cKeFM6nz2WsE03N_D12XWFjSp-rZx9ngjtPHQ3NINLKg=s160-c-k-c0x00ffffff-no-rj" alt="Foto de perfil do canal">
+    <h1>Como Ser Livre</h1>
+    <h3><em>Liberdade é uma jornada, não um destino.</em></h3>
+    <p>Este canal é dedicado a compartilhar dicas sobre liberdade financeira, liberdade de tempo e liberdade geográfica. Vamos juntos nessa jornada!</p>
+    <a href="https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA?sub_confirmation=1" class="subscribe-button">Inscreva-se no Canal</a>
 </body>
-</html>
+</html> 
