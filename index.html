@@ -6,54 +6,57 @@
     <title>Como Ser Livre</title>
     <style>
         body {
-            background-color: #f9f9f9;
-            color: #333;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            font-family: 'Arial', sans-serif; /* Fonte mais fina e minimalista */
             margin: 0;
-            text-align: center;
+            padding: 0;
+            background-color: #f0f0f0; /* Fundo claro */
+            color: #333; /* Texto escuro */
         }
-        h1 {
-            margin: 20px 0;
-            font-size: 2.5em;
+        .container {
+            max-width: 800px; /* Largura máxima */
+            margin: 40px auto; /* Margens maiores nas laterais */
+            padding: 20px;
+            text-align: center; /* Centraliza o conteúdo */
+            background-color: white; /* Fundo branco para o container */
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+        h3 {
+            font-size: 24px; /* Tamanho da fonte */
+            margin: 20px 0; /* Margem superior e inferior */
+        }
+        em {
+            font-weight: bold; /* Destaque em negrito */
+            color: #e63946; /* Cor para o destaque */
         }
         p {
-            margin: 10px 0 30px;
-            font-size: 1.2em;
+            font-size: 18px; /* Tamanho da fonte para a descrição */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            margin: 15px 0; /* Margem para o parágrafo */
         }
-        img {
-            border-radius: 50%;
-            width: 150px; /* Tamanho da foto de perfil */
-            height: 150px;
-            object-fit: cover;
-            margin-bottom: 20px;
+        .subscribe-button {
+            display: inline-block; /* Botão em bloco */
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            font-size: 18px; /* Tamanho da fonte do botão */
+            color: white; /* Texto do botão em branco */
+            background-color: #ff3e00; /* Cor de fundo do botão */
+            border: none; /* Sem borda */
+            border-radius: 5px; /* Bordas arredondadas */
+            cursor: pointer; /* Mão no hover */
+            transition: background-color 0.3s; /* Efeito de transição */
         }
-        .btn-inscrever {
-            background-color: #ff5733; /* Cor do botão */
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .btn-inscrever:hover {
-            background-color: #c0392b; /* Cor do botão ao passar o mouse */
+        .subscribe-button:hover {
+            background-color: #e63946; /* Cor ao passar o mouse */
         }
     </style>
 </head>
 <body>
-    <img src="https://yt3.googleusercontent.com/AWwXnms-uQ22kw2ntfB9I3FR4WYpqnahq-Uf3_9fwi02qX3RGqQ80IrAhhOg4Ap7eUFrMorI8A=s160-c-k-c0x00ffffff-no-rj" alt="Foto de Perfil do Canal">
-    <h1>Como Ser Livre</h1>
-    <h3><em>"A Liberdade é uma jornada, não um destino."</em></h3>
-    <p>Descubra como alcançar liberdade financeira e de tempo, enquanto desenvolve um estilo de vida minimalista.</p>
-    <button class="btn-inscrever" onclick="window.location.href='https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA?sub_confirmation=1'">
-        Inscreva-se no Canal
-    </button>
+    <div class="container">
+        <img src="https://yt3.googleusercontent.com/-juy_48UO-FV4WMG-cpa-kgWGigHpaMPTr52h38LOdvKFqzlP2t20QVyy9aYTrepBcVnYZicF-w=s160-c-k-c0x00ffffff-no-rj" alt="Foto de Perfil" width="150" height="150">
+        <h3><em>A Liberdade é uma jornada, não um destino</em></h3>
+        <p>Bem-vindo ao canal "Como Ser Livre", onde exploramos caminhos para a liberdade financeira, de tempo e geográfica.</p>
+        <p>Junte-se a nós enquanto discutimos ideias sobre minimalismo, desenvolvimento pessoal e estratégias para viver uma vida mais livre e plena.</p>
+        <a class="subscribe-button" href="https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA?sub_confirmation=1" target="_blank">Inscreva-se no Canal</a>
+    </div>
 </body>
 </html>
