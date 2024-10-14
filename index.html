@@ -5,86 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Como Ser Livre</title>
     <style>
-        /* Base */
-        * {
-            box-sizing: border-box;
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            color: #f3f3f3;
-        }
-        body {
-            background-color: #0e0e0e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
         }
         .container {
-            max-width: 600px;
             text-align: center;
+            max-width: 800px;
             padding: 20px;
-            border: 1px solid #333;
-            border-radius: 8px;
         }
-
-        /* Perfil */
         .profile-pic {
-            width: 120px;
-            height: 120px;
             border-radius: 50%;
-            border: 2px solid #ff4d00;
-            margin: 20px 0;
+            width: 150px;
+            height: 150px;
+            margin-top: 20px;
+            border: 4px solid #ff004f;
         }
         h1 {
-            font-size: 1.8em;
-            color: #ffffff;
-            margin-bottom: 10px;
+            font-size: 2.5em;
+            color: #ff004f;
         }
-        
         .impact-phrase {
-            font-size: 1.2em;
-            color: #ff4d00;
-            margin: 10px 0 20px;
-            font-style: italic;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ff004f;
+            margin: 15px 0;
         }
-        
-        /* Descrição */
         .description {
-            font-size: 1em;
-            color: #b5b5b5;
-            line-height: 1.5em;
-            margin: 10px 0;
+            font-size: 1.2em;
+            color: #d1d1d1;
+            line-height: 1.6;
         }
-
-        /* Botão */
         .cta-button {
             display: inline-block;
-            margin-top: 20px;
-            padding: 12px 24px;
-            color: #fff;
-            background-color: #ff4d00;
-            border: none;
-            border-radius: 4px;
+            padding: 12px 30px;
+            margin-top: 25px;
             font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #ff004f;
             text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         .cta-button:hover {
-            background-color: #ff6a33;
+            background-color: #e60045;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <img src="https://yt3.googleusercontent.com/AWwXnms-uQ22kw2ntfB9I3FR4WYpqnahq-Uf3_9fwi02qX3RGqQ80IrAhhOg4Ap7eUFrMorI8A=s160-c-k-c0x00ffffff-no-rj" alt="Foto de Perfil" class="profile-pic">
+        <img src="https://yt3.googleusercontent.com/XwYVaGM66j2onhWnv9Ir2NdafB4U0rpgxiO8NJaeL77ymT1y0QDE3qTVaqUxV0SsLqFQu8X3=s160-c-k-c0x00ffffff-no-rj" alt="Foto de Perfil do Canal" class="profile-pic">
         <h1>Como Ser Livre</h1>
-        <div class="impact-phrase">A Liberdade é uma jornada, não um destino.</div>
-        <div class="description">
-            No canal, exploramos a liberdade em suas formas: financeira, de tempo e geográfica, inspirando simplicidade e transformação.
-        </div>
-        <a href="https://www.youtube.com/channel/UCStXYJ2vPCXBMys5v-MaTfA?sub_confirmation=1" target="_blank" class="cta-button">Inscreva-se no Canal</a>
+        <p class="impact-phrase">A Liberdade é uma jornada, não um destino</p>
+        <p class="description">
+            O canal "Como Ser Livre" explora o caminho para a liberdade em suas diversas formas: financeira, de tempo, e geográfica. 
+            Com temas que vão de sobrevivencialismo a minimalismo e desenvolvimento pessoal, aqui você encontra 
+            inspiração para conquistar uma vida mais autônoma e sem amarras.
+        </p>
+        <a href="https://www.youtube.com/comoserlivre?sub_confirmation=1" class="cta-button">Inscreva-se no Canal</a>
     </div>
-
 </body>
 </html>
